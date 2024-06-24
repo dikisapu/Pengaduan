@@ -24,7 +24,7 @@
                 <div class="col-12 col-md-6 order-md-1 order-last">
                     <h2>Sunting Komentar</h2>
                     <p class="text-subtitle text-muted">
-                        Lakukan penyuntingan terhadap suatu komentar.
+                        Lakukan penyuntingan terhadap suatu komentarr.
                     </p>
                     <hr>
                     <div class="mb-4">
