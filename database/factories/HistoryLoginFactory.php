@@ -22,7 +22,7 @@ class HistoryLoginFactory extends Factory
         $operatingSystem = ["\"Linux\"", "\"Mac\"", "\"Windows\"", "\"Android\""];
 
         return [
-            "username" => $this->faker->randomElement(["alfianchii", "moepoi", "nata.ardhana", 'fauzy', "fadli.890"]),
+            "username" => $this->faker->randomElement(["Alexander", "Elza", "miul", 'Diki', "Ahsanul"]),
             "attempt_result" => $this->faker->randomElement(["Y", "N"]),
             "operating_system" => $this->faker->randomElement($operatingSystem),
             "remote_address" => "127.0.0.1",

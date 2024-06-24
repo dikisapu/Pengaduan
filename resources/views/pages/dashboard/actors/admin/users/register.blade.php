@@ -107,7 +107,7 @@
                                                 <label for="username" class="form-label">Username</label>
                                                 <div class="position-relative">
                                                     <input type="text" class="form-control py-2"
-                                                        placeholder="e.g. alfianchii" id="username" name="username"
+                                                        placeholder="e.g. Alexander" id="username" name="username"
                                                         value="{{ old('username') }}" maxlength="255" />
                                                     <div class="form-control-icon">
                                                         <i class="bi bi-at py-2"></i>
