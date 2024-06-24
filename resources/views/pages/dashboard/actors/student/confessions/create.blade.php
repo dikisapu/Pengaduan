@@ -22,9 +22,9 @@
         <div class="page-title">
             <div class="row">
                 <div class="col-12 col-md-6 order-md-1 order-last">
-                    <h2>Buat Pengakuan</h2>
+                    <h2>Buat pengaduan</h2>
                     <p class="text-subtitle text-muted">
-                        Ceritakan pengakuan yang kamu miliki.
+                        Ceritakan pengaduan yang kamu miliki.
                     </p>
                     <hr>
                     <div class="mb-4">
@@ -43,7 +43,7 @@
                                 <a href="/dashboard">Dashboard</a>
                             </li>
                             <li class="breadcrumb-item">
-                                <a href="/dashboard/confessions">Pengakuan</a>
+                                <a href="/dashboard/confessions">pengaduan</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
                                 Buat
@@ -195,7 +195,7 @@
                                                 class="form-group mandatory @error('privacy'){{ 'is-invalid' }}@enderror">
                                                 <fieldset>
                                                     <label class="form-label">
-                                                        Kerahasiaan Pengakuan
+                                                        Kerahasiaan pengaduan
                                                     </label>
                                                     <div class="d-flex">
                                                         <div class="form-check me-3">
@@ -254,7 +254,7 @@
                                         <div class="col-12 mb-1">
                                             <div class="form-group mandatory @error('body'){{ 'is-invalid' }}@enderror">
                                                 <div class="position-relative">
-                                                    <label class="form-label">Isi Pengakuan</label>
+                                                    <label class="form-label">Isi pengaduan</label>
 
                                                     <input id="body" name="body" value="{{ old('body') }}"
                                                         type="hidden">

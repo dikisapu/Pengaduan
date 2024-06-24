@@ -37,7 +37,7 @@
                             Kembali
                         </a>
 
-                        <a data-bs-toggle="tooltip" data-bs-original-title="Nonaktifkan kategori pengakuan." href="#"
+                        <a data-bs-toggle="tooltip" data-bs-original-title="Nonaktifkan kategori Pengaduan." href="#"
                             class="btn btn-danger px-2 pt-2" data-confirm-confession-category-destroy="true"
                             data-unique="{{ base64_encode($confessionCategory->slug) }}">
                             <span data-confirm-confession-category-destroy="true"
@@ -153,7 +153,7 @@
                                                     @if ($confessionCategory->image)
                                                         <div class="mb-2">
                                                             <a data-bs-toggle="tooltip"
-                                                                data-bs-original-title="Hapus foto kategori pengakuan."
+                                                                data-bs-original-title="Hapus foto kategori Pengaduan."
                                                                 class="btn btn-danger px-2 pt-2"
                                                                 data-confirm-confession-category-image-destroy="true"
                                                                 data-redirect="{{ base64_encode($confessionCategory->slug) }}"

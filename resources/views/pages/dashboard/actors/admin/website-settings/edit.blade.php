@@ -87,7 +87,7 @@
                                                 <label for="TEXT_HERO_HEADER" class="form-label">Hero Text Title</label>
                                                 <div class="position-relative">
                                                     <input type="text" class="form-control py-2"
-                                                        placeholder="e.g. Sistem Pengakuan Online SMKN 4 Kota Tangerang"
+                                                        placeholder="e.g. Sistem Pengaduan Online SMKN 4 Kota Tangerang"
                                                         id="TEXT_HERO_HEADER" name="TEXT_HERO_HEADER"
                                                         value="{{ old('TEXT_HERO_HEADER', config('web_config')['TEXT_HERO_HEADER']) }}"
                                                         maxlength="125" />
@@ -109,7 +109,7 @@
                                                     Description</label>
                                                 <div class="position-relative">
                                                     <input type="text" class="form-control py-2"
-                                                        placeholder="e.g. Sampaikan pengakuan kamu di website ini~"
+                                                        placeholder="e.g. Sampaikan Pengaduan kamu di website ini~"
                                                         id="TEXT_HERO_DESCRIPTION" name="TEXT_HERO_DESCRIPTION"
                                                         value="{{ old('TEXT_HERO_DESCRIPTION', config('web_config')['TEXT_HERO_DESCRIPTION']) }}"
                                                         maxlength="255" />

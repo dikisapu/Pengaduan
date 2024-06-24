@@ -24,7 +24,7 @@
                 <div class="col-12 col-md-6 order-md-1 order-last">
                     <h2>Buat Kategori</h2>
                     <p class="text-subtitle text-muted">
-                        Buat sebuah kategori untuk suatu pengakuan.
+                        Buat sebuah kategori untuk suatu Pengaduan.
                     </p>
                     <hr>
                     <div class="mb-4">

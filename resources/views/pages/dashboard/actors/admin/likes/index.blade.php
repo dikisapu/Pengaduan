@@ -18,7 +18,7 @@
                 <div class="col-12 col-md-6 order-md-1 order-last">
                     <h2>Semua Suka</h2>
                     <p class="text-subtitle text-muted">
-                        Berikut adalah semua <i>likes</i> yang pernah dilakukan oleh pengguna terhadap suatu pengakuan.
+                        Berikut adalah semua <i>likes</i> yang pernah dilakukan oleh pengguna terhadap suatu Pengaduan.
                     </p>
                     <hr>
                 </div>
@@ -99,7 +99,7 @@
                                 <th>#</th>
                                 <th>Tanggal</th>
                                 <th>Username</th>
-                                <th>Pengakuan</th>
+                                <th>Pengaduan</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -121,7 +121,7 @@
                                         <div class="d-flex">
                                             <div class="me-2">
                                                 <a data-bs-toggle="tooltip"
-                                                    data-bs-original-title="Rincian dari pengakuan {{ htmlspecialchars('@' . $like->confession->student->user->username) }}."
+                                                    data-bs-original-title="Rincian dari Pengaduan {{ htmlspecialchars('@' . $like->confession->student->user->username) }}."
                                                     href="/confessions/{{ $like->confession->slug }}/comments/create"
                                                     class="btn btn-info px-2 pt-2">
                                                     <span class="fa-fw fa-lg select-all fas"></span>
@@ -202,7 +202,7 @@
                                 <th>#</th>
                                 <th>Tanggal</th>
                                 <th>Username</th>
-                                <th>Pengakuan</th>
+                                <th>Pengaduan</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -217,7 +217,7 @@
                                         <div class="d-flex">
                                             <div class="me-2">
                                                 <a data-bs-toggle="tooltip"
-                                                    data-bs-original-title="Rincian dari pengakuan {{ htmlspecialchars('@' . $like->confession->student->user->username) }}."
+                                                    data-bs-original-title="Rincian dari Pengaduan {{ htmlspecialchars('@' . $like->confession->student->user->username) }}."
                                                     href="/confessions/{{ $like->confession->slug }}/comments/create"
                                                     class="btn btn-info px-2 pt-2">
                                                     <span class="fa-fw fa-lg select-all fas"></span>

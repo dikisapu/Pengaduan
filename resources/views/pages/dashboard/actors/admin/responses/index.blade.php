@@ -101,7 +101,7 @@
                                 <th>File pendukung</th>
                                 <th>Sunting</th>
                                 <th>Tanggal</th>
-                                <th>Status Pengakuan</th>
+                                <th>Status Pengaduan</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -150,7 +150,7 @@
                                     <td>
                                         <div class="d-flex">
                                             <div class="me-2">
-                                                <a data-bs-toggle="tooltip" data-bs-original-title="Rincian dari pengakuan."
+                                                <a data-bs-toggle="tooltip" data-bs-original-title="Rincian dari Pengaduan."
                                                     href="/dashboard/confessions/{{ $response->confession->slug }}/responses/create?response={{ base64_encode($response->id_confession_response) }}&page={{ $response->page }}"
                                                     class="btn btn-info px-2 pt-2">
                                                     <span class="fa-fw fa-lg select-all fas"></span>
@@ -162,7 +162,7 @@
                             @empty
                                 <tr>
                                     <td colspan="8">
-                                        <p class="text-center mt-3">Tidak ada pengakuan :(</p>
+                                        <p class="text-center mt-3">Tidak ada Pengaduan :(</p>
                                     </td>
                                 </tr>
                             @endforelse

@@ -23,7 +23,7 @@
             <div class="page-title">
                 <div class="row justify-content-center">
                     <div class="col-12 mb-3 header-about mt-3">
-                        <h2>Pengakuan dari
+                        <h2>Pengaduan dari
                             @if ($confession->privacy == 'anonymous')
                                 <i>Rahasia</i> 🤫
                             @else
@@ -33,7 +33,7 @@
                             @endif
                         </h2>
                         <p class="text-subtitle text-muted">
-                            Rincian dari suatu pengakuan.
+                            Rincian dari suatu Pengaduan.
                         </p>
                         <hr>
                         <div class="mb-3">
@@ -52,7 +52,7 @@
                 {{-- Confession --}}
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title d-inline-block">Pengakuan</h3> <small
+                        <h3 class="card-title d-inline-block">Pengaduan</h3> <small
                             class="text-muted">({{ $confession->privacy }})</small>
                     </div>
                     <div class="card-body">

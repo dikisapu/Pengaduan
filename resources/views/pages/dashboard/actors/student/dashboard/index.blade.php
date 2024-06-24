@@ -69,7 +69,7 @@
                     <div class="row user-select-none">
                         <div class="col-6 col-lg-3 col-md-6">
                             <a style="cursor: pointer" onclick="window.location.href='/dashboard/confessions'"
-                                data-bs-toggle="tooltip" data-bs-original-title="Jumlah pengakuan yang telah kamu buat.">
+                                data-bs-toggle="tooltip" data-bs-original-title="Jumlah pengaduan yang telah kamu buat.">
                                 <div class="card">
                                     <div class="card-body px-4 py-4-5">
                                         <div class="row">
@@ -81,7 +81,7 @@
                                             </div>
                                             <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                                                 <h6 class="text-muted font-semibold">
-                                                    Pengakuan
+                                                    pengaduan
                                                 </h6>
                                                 <h6 class="font-extrabold mb-0">
                                                     {{ $yourConfessionsCount }}
@@ -193,7 +193,7 @@
                 <div class="col-12 col-lg-3">
                     <div class="card" style="overflow-x:auto">
                         <div class="card-header">
-                            <h4 class="text-center">Pengakuan Terbaru Kamu</h4>
+                            <h4 class="text-center">pengaduan Terbaru Kamu</h4>
                         </div>
                         <div class="card-content pb-4">
                             @forelse ($yourRecentConfessions as $confession)
@@ -210,7 +210,7 @@
                             @empty
                                 <div class="recent-message px-4 py-3">
                                     <div class="alert alert-warning" role="alert">
-                                        <h4 class="alert-heading">Tidak ada pengakuan :(</h4>
+                                        <h4 class="alert-heading">Tidak ada pengaduan :(</h4>
                                     </div>
                                 </div>
                             @endforelse

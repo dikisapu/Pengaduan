@@ -120,7 +120,7 @@
                         <div class="col-6 col-lg-3 col-md-6">
                             <a style="cursor: pointer" onclick="window.location.href='/dashboard/confessions'"
                                 data-bs-toggle="tooltip"
-                                data-bs-original-title="Jumlah seluruh pengakuan yang telah dibuat oleh 'student'.">
+                                data-bs-original-title="Jumlah seluruh Pengaduan yang telah dibuat oleh 'student'.">
                                 <div class="card">
                                     <div class="card-body px-4 py-4-5">
                                         <div class="row">
@@ -132,7 +132,7 @@
                                             </div>
                                             <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                                                 <h6 class="text-muted font-semibold">
-                                                    Pengakuan
+                                                    Pengaduan
                                                 </h6>
                                                 <h6 class="font-extrabold mb-0">
                                                     {{ $confessionsCount }}
@@ -146,7 +146,7 @@
                         <div class="col-6 col-lg-3 col-md-6">
                             <a style="cursor: pointer" onclick="window.location.href='/dashboard/confessions/responses'"
                                 data-bs-toggle="tooltip"
-                                data-bs-original-title="Jumlah seluruh tanggapan yang telah dibuat oleh 'officer' ataupun 'student' terhadap suatu pengakuan (system's responses not included).">
+                                data-bs-original-title="Jumlah seluruh tanggapan yang telah dibuat oleh 'officer' ataupun 'student' terhadap suatu Pengaduan (system's responses not included).">
                                 <div class="card">
                                     <div class="card-body px-4 py-4-5">
                                         <div class="row">
@@ -192,7 +192,7 @@
                 <div class="col-12 col-lg-3">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="text-center">Pengakuan Terbaru</h4>
+                            <h4 class="text-center">Pengaduan Terbaru</h4>
                         </div>
                         <div class="card-content pb-4">
                             @forelse ($recentConfessions as $confession)
@@ -228,7 +228,7 @@
                             @empty
                                 <div class="recent-message d-flex px-4 py-3">
                                     <div class="alert alert-warning" role="alert">
-                                        <h4 class="alert-heading">Tidak ada pengakuan :(</h4>
+                                        <h4 class="alert-heading">Tidak ada Pengaduan :(</h4>
                                     </div>
                                 </div>
                             @endforelse
@@ -236,7 +236,7 @@
                     </div>
                     <div class="card">
                         <div class="card-header">
-                            <h4>Pengakuan</h4>
+                            <h4>Pengaduan</h4>
                         </div>
                         <div class="card-body">
                             <div id="chart-confession-genders">

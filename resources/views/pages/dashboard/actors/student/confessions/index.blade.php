@@ -18,16 +18,16 @@
         <div class="page-title">
             <div class="row">
                 <div class="col-12 col-md-6 order-md-1 order-last">
-                    <h2>Semua Pengakuan Kamu</h2>
+                    <h2>Semua pengaduan Kamu</h2>
                     <p class="text-subtitle text-muted">
-                        Keseluruhan data dari pengakuan kamu.
+                        Keseluruhan data dari pengaduan kamu.
                     </p>
                     <hr>
                     <div class="mb-4">
                         <a data-bs-toggle="tooltip"
-                            data-bs-original-title="Buat sebuah pengakuan yang ingin kamu ungkapkan."
+                            data-bs-original-title="Buat sebuah pengaduan yang ingin kamu ungkapkan."
                             href="/dashboard/confessions/create" class="btn btn-success px-2 pt-2 me-1">
-                            <span class="fa-fw fa-lg select-all fas text-white"></span> Buat Pengakuan
+                            <span class="fa-fw fa-lg select-all fas text-white"></span> Buat pengaduan
                         </a>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                                 <a href="/dashboard">Dashboard</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
-                                Pengakuan
+                                pengaduan
                             </li>
                         </ol>
                     </nav>
@@ -50,7 +50,7 @@
             <div class="card">
                 <div class="card-header">
                     <div class="d-flex flex-column flex-md-row justify-content-between" style="row-gap: 1rem;">
-                        <h3>Pengakuan Kamu</h3>
+                        <h3>pengaduan Kamu</h3>
 
                         <div class="dropdown dropdown-color-icon mb-3 d-flex justify-content-start">
                             <button class="btn btn-primary dropdown-toggle" type="button" id="export"
@@ -145,7 +145,7 @@
                                             @if ($confession->status === 'unprocess')
                                                 <div class="me-2">
                                                     <a data-bs-toggle="tooltip"
-                                                        data-bs-original-title="Lakukan penyuntingan terhadap pengakuan kamu."
+                                                        data-bs-original-title="Lakukan penyuntingan terhadap pengaduan kamu."
                                                         href="/dashboard/confessions/{{ $confession->slug }}/edit"
                                                         class="btn btn-warning px-2 pt-2">
                                                         <span class="fa-fw fa-lg select-all fas"></span>
@@ -153,7 +153,7 @@
                                                 </div>
                                                 <div class="me-2">
                                                     <a data-bs-toggle="tooltip"
-                                                        data-bs-original-title="Unsend pengakuan yang kamu miliki."
+                                                        data-bs-original-title="Unsend pengaduan yang kamu miliki."
                                                         href="#" class="btn btn-danger px-2 pt-2"
                                                         data-confirm-confession-destroy="true"
                                                         data-unique="{{ base64_encode($confession->slug) }}">
@@ -166,7 +166,7 @@
 
                                             <div class="me-2">
                                                 <a data-bs-toggle="tooltip"
-                                                    data-bs-original-title="Rincian dari pengakuan kamu."
+                                                    data-bs-original-title="Rincian dari pengaduan kamu."
                                                     href="/dashboard/confessions/{{ $confession->slug }}/responses/create"
                                                     class="btn btn-info px-2 pt-2">
                                                     <span class="fa-fw fa-lg select-all fas"></span>
@@ -178,7 +178,7 @@
                             @empty
                                 <tr>
                                     <td colspan="8">
-                                        <p class="text-center mt-3">Tidak ada pengakuan :(</p>
+                                        <p class="text-center mt-3">Tidak ada pengaduan :(</p>
                                     </td>
                                 </tr>
                             @endforelse

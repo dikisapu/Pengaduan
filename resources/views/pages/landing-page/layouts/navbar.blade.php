@@ -30,7 +30,7 @@
                 @auth
                     <li class="nav-item">
                         <a class="nav-link text-white {{ Request::is('confessions*') && !str_contains(request()->url(), 'categories') ? 'border-bottom border-3 fw-bold' : '' }}"
-                            href="/confessions">Pengakuan</a>
+                            href="/confessions">Pengaduan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white {{ Request::is('confessions/categories') ? 'border-bottom border-3 fw-bold' : '' }}"

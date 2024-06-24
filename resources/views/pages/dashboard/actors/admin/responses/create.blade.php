@@ -17,7 +17,7 @@
                 <div class="col-12 col-md-6 order-md-1 order-last">
                     <h2>Kronologi Kejadian</h2>
                     <p class="text-subtitle text-muted">
-                        Rincian dari pengakuan yang telah kamu buat.
+                        Rincian dari Pengaduan yang telah kamu buat.
                     </p>
                     <hr>
                     <div class="mb-4">
@@ -36,7 +36,7 @@
                                 <a href="/dashboard">Dashboard</a>
                             </li>
                             <li class="breadcrumb-item">
-                                <a href="/dashboard/confessions">Pengakuan</a>
+                                <a href="/dashboard/confessions">Pengaduan</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
                                 Tanggapan
@@ -51,7 +51,7 @@
             {{-- Confession --}}
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title d-inline-block">Pengakuan</h3> <small
+                    <h3 class="card-title d-inline-block">Pengaduan</h3> <small
                         class="text-muted">({{ $confession->privacy }})</small>
                 </div>
                 <div class="card-body">

@@ -18,13 +18,13 @@
         <div class="page-title">
             <div class="row">
                 <div class="col-12 col-md-6 order-md-1 order-last">
-                    <h2>Semua Kategori Pengakuan</h2>
+                    <h2>Semua Kategori Pengaduan</h2>
                     <p class="text-subtitle text-muted">
-                        Keseluruhan data dari kategori untuk pengakuan.
+                        Keseluruhan data dari kategori untuk Pengaduan.
                     </p>
                     <hr>
                     <div class="mb-4">
-                        <a data-bs-toggle="tooltip" data-bs-original-title="Buat sebuah kategori untuk suatu pengakuan."
+                        <a data-bs-toggle="tooltip" data-bs-original-title="Buat sebuah kategori untuk suatu Pengaduan."
                             href="/dashboard/confessions/confession-categories/create"
                             class="btn btn-success px-2 pt-2 me-1">
                             <span class="fa-fw fa-lg select-all fas text-white"></span> Buat Kategori
@@ -50,7 +50,7 @@
             <div class="card">
                 <div class="card-header">
                     <div class="d-flex flex-column flex-md-row justify-content-between" style="row-gap: 1rem;">
-                        <h3>Kategori Pengakuan</h3>
+                        <h3>Kategori Pengaduan</h3>
 
                         <div class="dropdown dropdown-color-icon mb-3 d-flex justify-content-start">
                             <button class="btn btn-primary dropdown-toggle" type="button" id="export"
@@ -104,7 +104,7 @@
                                 <th>#</th>
                                 <th>Nama Kategori</th>
                                 <th>Deskripsi</th>
-                                <th>Jumlah Pengakuan</th>
+                                <th>Jumlah Pengaduan</th>
                                 <th>Sunting</th>
                                 <th>Foto</th>
                                 <th>Data</th>
@@ -144,7 +144,7 @@
                                             @if ($category->flag_active === 'Y')
                                                 <div class="me-2">
                                                     <a data-bs-toggle="tooltip"
-                                                        data-bs-original-title="Lakukan penyuntingan terhadap kategori pengakuan."
+                                                        data-bs-original-title="Lakukan penyuntingan terhadap kategori Pengaduan."
                                                         href="/dashboard/confessions/confession-categories/{{ $category->slug }}/edit"
                                                         class="btn btn-warning px-2 pt-2">
                                                         <span class="fa-fw fa-lg select-all fas"></span>
@@ -152,7 +152,7 @@
                                                 </div>
                                                 <div class="me-2">
                                                     <a data-bs-toggle="tooltip"
-                                                        data-bs-original-title="Nonaktifkan kategori pengakuan."
+                                                        data-bs-original-title="Nonaktifkan kategori Pengaduan."
                                                         href="#" class="btn btn-danger px-2 pt-2"
                                                         data-confirm-confession-category-destroy="true"
                                                         data-unique="{{ base64_encode($category->slug) }}">
@@ -164,7 +164,7 @@
                                             @else
                                                 <div class="me-2">
                                                     <a data-bs-toggle="tooltip"
-                                                        data-bs-original-title="Aktivasi kategori pengakuan."
+                                                        data-bs-original-title="Aktivasi kategori Pengaduan."
                                                         href="#" class="btn btn-success px-2 pt-2"
                                                         data-confirm-confession-category-activate="true"
                                                         data-unique="{{ base64_encode($category->slug) }}">
@@ -180,7 +180,7 @@
                             @empty
                                 <tr>
                                     <td colspan="8">
-                                        <p class="text-center mt-3">Tidak ada kategori pengakuan :(</p>
+                                        <p class="text-center mt-3">Tidak ada kategori Pengaduan :(</p>
                                     </td>
                                 </tr>
                             @endforelse

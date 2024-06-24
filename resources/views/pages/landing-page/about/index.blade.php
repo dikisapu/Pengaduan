@@ -23,7 +23,7 @@
                     <p class="fs-5 px-sm-5">
                         {{ config('web_config')['TEXT_WEB_TITLE'] }} adalah wadah khusus bagi kamu, siswa/i
                         {{ config('web_config')['TEXT_FOOTER'] }}, buat
-                        berbagi pengakuan, laporan, kritik, saran, atau aspirasi selama berada di sekolah ini. Dengan
+                        berbagi Pengaduan, laporan, kritik, saran, atau aspirasi selama berada di sekolah ini. Dengan
                         hadirnya aplikasi {{ config('web_config')['TEXT_WEB_TITLE'] }}, harapannya kamu jadi lebih berani
                         dan terbuka ketika berkomunikasi dengan
                         sekolah untuk menangani berbagai permasalahan yang mungkin ada.

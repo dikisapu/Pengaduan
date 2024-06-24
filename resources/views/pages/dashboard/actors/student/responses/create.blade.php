@@ -27,7 +27,7 @@
                 <div class="col-12 col-md-6 order-md-1 order-last">
                     <h2>Kronologi Kejadian</h2>
                     <p class="text-subtitle text-muted">
-                        Rincian dari pengakuan yang telah kamu buat.
+                        Rincian dari pengaduan yang telah kamu buat.
                     </p>
                     <hr>
                     <div class="mb-4">
@@ -41,13 +41,13 @@
                         {{-- --------------------------------- Rules --}}
                         @if ($confession->status === 'unprocess')
                             <a data-bs-toggle="tooltip"
-                                data-bs-original-title="Lakukan penyuntingan terhadap pengakuan kamu."
+                                data-bs-original-title="Lakukan penyuntingan terhadap pengaduan kamu."
                                 href="/dashboard/confessions/{{ $confession->slug }}/edit"
                                 class="btn btn-warning px-2 pt-2 me-1">
                                 <span class="fa-fw fa-lg select-all fas"></span>
                             </a>
 
-                            <a data-bs-toggle="tooltip" data-bs-original-title="Unsend pengakuan kamu." href="#"
+                            <a data-bs-toggle="tooltip" data-bs-original-title="Unsend pengaduan kamu." href="#"
                                 data-confirm-confession-destroy="true" data-unique="{{ base64_encode($confession->slug) }}"
                                 class="btn btn-danger px-2 pt-2 me-1">
                                 <span data-confirm-confession-destroy="true"
@@ -64,7 +64,7 @@
                                 <a href="/dashboard">Dashboard</a>
                             </li>
                             <li class="breadcrumb-item">
-                                <a href="/dashboard/confessions">Pengakuan</a>
+                                <a href="/dashboard/confessions">pengaduan</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
                                 Tanggapan
@@ -79,7 +79,7 @@
             {{-- Confession --}}
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title d-inline-block">Pengakuan</h3> <small
+                    <h3 class="card-title d-inline-block">pengaduan</h3> <small
                         class="text-muted">({{ $confession->privacy }})</small>
                 </div>
                 <div class="card-body">

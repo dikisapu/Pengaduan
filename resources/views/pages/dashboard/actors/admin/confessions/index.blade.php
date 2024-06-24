@@ -18,9 +18,9 @@
         <div class="page-title">
             <div class="row">
                 <div class="col-12 col-md-6 order-md-1 order-last">
-                    <h2>Pengakuan</h2>
+                    <h2>Pengaduan</h2>
                     <p class="text-subtitle text-muted">
-                        Keseluruhan data dari pengakuan dengan status unprocess, process, release, dan close.
+                        Keseluruhan data dari Pengaduan dengan status unprocess, process, release, dan close.
                     </p>
                     <hr>
                 </div>
@@ -31,7 +31,7 @@
                                 <a href="/dashboard">Dashboard</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
-                                Pengakuan
+                                Pengaduan
                             </li>
                         </ol>
                     </nav>
@@ -139,7 +139,7 @@
                                         <div class="d-flex">
                                             <div class="me-2">
                                                 <a data-bs-toggle="tooltip"
-                                                    data-bs-original-title="Rincian dari suatu pengakuan."
+                                                    data-bs-original-title="Rincian dari suatu Pengaduan."
                                                     href="/dashboard/confessions/{{ $confession->slug }}/responses/create"
                                                     class="btn btn-info px-2 pt-2">
                                                     <span class="fa-fw fa-lg select-all fas"></span>
@@ -151,7 +151,7 @@
                             @empty
                                 <tr>
                                     <td colspan="9">
-                                        <p class="text-center mt-3">Tidak ada pengakuan :(</p>
+                                        <p class="text-center mt-3">Tidak ada Pengaduan :(</p>
                                     </td>
                                 </tr>
                             @endforelse
@@ -261,7 +261,7 @@
                                         <div class="d-flex">
                                             <div class="me-2">
                                                 <a data-bs-toggle="tooltip"
-                                                    data-bs-original-title="Rincian dari suatu pengakuan."
+                                                    data-bs-original-title="Rincian dari suatu Pengaduan."
                                                     href="/dashboard/confessions/{{ $confession->slug }}/responses/create"
                                                     class="btn btn-info px-2 pt-2">
                                                     <span class="fa-fw fa-lg select-all fas"></span>
@@ -273,7 +273,7 @@
                             @empty
                                 <tr>
                                     <td colspan="9">
-                                        <p class="text-center mt-3">Tidak ada pengakuan :(</p>
+                                        <p class="text-center mt-3">Tidak ada Pengaduan :(</p>
                                     </td>
                                 </tr>
                             @endforelse

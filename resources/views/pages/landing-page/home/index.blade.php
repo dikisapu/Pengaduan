@@ -36,7 +36,7 @@
                             <div class="ellipse">
                                 <img src="{{ asset('images/icon/edit-property.svg') }}" alt="icon" width="32">
                             </div>
-                            <h5 class="mt-2">Tulis Pengakuan</h5>
+                            <h5 class="mt-2">Tulis Pengaduan</h5>
                             <p class="d-md-block d-none">Bagikan ceritamu dengan lengkap dan detail.</p>
                         </div>
                         <div class="col">
@@ -44,7 +44,7 @@
                                 <img src="{{ asset('images/icon/in-progress.svg') }}" alt="icon" width="36">
                             </div>
                             <h5 class="mt-2">Proses Verifikasi</h5>
-                            <p class="d-md-block d-none">Pengakuan kamu akan dicek dan diverifikasi terlebih dahulu.
+                            <p class="d-md-block d-none">Pengaduan kamu akan dicek dan diverifikasi terlebih dahulu.
                             </p>
                         </div>
                         <div class="col">
@@ -53,7 +53,7 @@
                             </div>
                             <h5 class="mt-2">Tindak Lanjut</h5>
                             <p class="d-md-block d-none">Petugas akan melanjutkan dan mengurus dengan sigap
-                                pengakuannya.
+                                Pengaduannya.
                             </p>
                         </div>
                         <div class="col">
@@ -61,7 +61,7 @@
                                 <img src="{{ asset('images/icon/chat-bubble.svg') }}" alt="icon" width="37">
                             </div>
                             <h5 class="mt-2">Dapat Tanggapan</h5>
-                            <p class="d-md-block d-none">Setelahnya, pengakuanmu akan mendapatkan tanggapan dari petugas.
+                            <p class="d-md-block d-none">Setelahnya, Pengaduanmu akan mendapatkan tanggapan dari petugas.
                             </p>
                         </div>
                         <div class="col">
@@ -69,7 +69,7 @@
                                 <img src="{{ asset('images/icon/Done.svg') }}" alt="icon" width="37">
                             </div>
                             <h5 class="mt-2">Selesai</h5>
-                            <p class="d-md-block d-none">Selamat! Pengakuanmu udah selesai diproses oleh petugas!</p>
+                            <p class="d-md-block d-none">Selamat! Pengaduanmu udah selesai diproses oleh petugas!</p>
                         </div>
                     </div>
                 </div>
@@ -77,17 +77,17 @@
                     <div class="col-12 text-center mt-5">
                         @can('student')
                             <a href="/dashboard/confessions/create" class="btn btn-lapor rounded-3 fw-bold">Buat
-                                Pengakuan</a>
+                                Pengaduan</a>
                         @endcan
                         @guest
                             <a href="/login" class="btn btn-lapor rounded-3 fw-bold">Buat
-                                Pengakuan</a>
+                                Pengaduan</a>
                         @endguest
                     </div>
                 </div>
                 <div class="row mt-5">
                     <div class="col-12 jumlah-lapor mt-5 text-center">
-                        <h3 class="text-white mt-4 fs-2">Jumlah Pengakuan</h3><br>
+                        <h3 class="text-white mt-4 fs-2">Jumlah Pengaduan</h3><br>
                         <p class="text-white fw-bold fs-1 mt-2"> {{ $confessionsCount }} </p><br>
                         <p class="text-white fw-bold fs-3 ">#JANGANTAKUTCONFESS!</p>
                     </div>
@@ -139,7 +139,7 @@
                                         </div>
                                         <h5 class="my-3">Ditanggapi Secara Cepat</h5>
                                         <p>
-                                            Setiap pengakuan yang kamu bagikan akan segera direspon. Jadi, kamu tidak hanya
+                                            Setiap Pengaduan yang kamu bagikan akan segera direspon. Jadi, kamu tidak hanya
                                             bisa 'berbicara', tapi juga merasa 'didengar' dengan tanggapan yang pas terhadap
                                             keluhan, saran, atau masukan yang kamu berikan. Ayo, sampaikan pendapatmu, kita
                                             siap dengerin!

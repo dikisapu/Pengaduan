@@ -14,9 +14,9 @@
             <div class="page-title">
                 <div class="row justify-content-center">
                     <div class="col-12 mb-3 header-about mt-3">
-                        <h2>Kategori Pengakuan</h2>
+                        <h2>Kategori Pengaduan</h2>
                         <p class="text-subtitle text-muted">
-                            Daftar seluruh kategori pengakuan.
+                            Daftar seluruh kategori Pengaduan.
                         </p>
                         <hr>
                     </div>
@@ -70,7 +70,7 @@
 
                                     <div class="mt-4">
                                         <a href="/confessions?category={{ $category->slug }}"
-                                            class="btn btn-color text-white block">Pengakuan</a>
+                                            class="btn btn-color text-white block">Pengaduan</a>
                                     </div>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@
                     </div>
                 @empty
                     <div class="my-5">
-                        <h3 class="text-center ">Tidak ada kategori pengakuan :(</h3>
+                        <h3 class="text-center ">Tidak ada kategori Pengaduan :(</h3>
                     </div>
                 @endforelse
             </div>

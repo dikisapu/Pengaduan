@@ -99,7 +99,7 @@
                                 <th>File pendukung</th>
                                 <th>Sunting</th>
                                 <th>Tanggal</th>
-                                <th>Status Pengakuan</th>
+                                <th>Status pengaduan</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -173,7 +173,7 @@
 
                                             <div class="me-2">
                                                 <a data-bs-toggle="tooltip"
-                                                    data-bs-original-title="Rincian dari pengakuan kamu."
+                                                    data-bs-original-title="Rincian dari pengaduan kamu."
                                                     href="/dashboard/confessions/{{ $response->confession->slug }}/responses/create?response={{ base64_encode($response->id_confession_response) }}&page={{ $response->page }}"
                                                     class="btn btn-info px-2 pt-2">
                                                     <span class="fa-fw fa-lg select-all fas"></span>

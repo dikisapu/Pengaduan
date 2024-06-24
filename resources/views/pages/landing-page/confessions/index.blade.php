@@ -14,9 +14,9 @@
             <div class="page-title">
                 <div class="row justify-content-center">
                     <div class="col-12 mb-3 header-about mt-3">
-                        <h2>Pengakuan</h2>
+                        <h2>Pengaduan</h2>
                         <p class="text-subtitle text-muted">
-                            Daftar seluruh pengakuan yang telah dibuat oleh siswa/i.
+                            Daftar seluruh Pengaduan yang telah dibuat oleh siswa/i.
                         </p>
                         <hr>
                     </div>
@@ -221,7 +221,7 @@
                     </div>
                 @empty
                     <div class="my-5">
-                        <h3 class="text-center ">Tidak ada pengakuan :(</h3>
+                        <h3 class="text-center ">Tidak ada Pengaduan :(</h3>
                     </div>
                 @endforelse
             </div>

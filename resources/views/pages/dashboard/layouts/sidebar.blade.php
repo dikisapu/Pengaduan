@@ -85,7 +85,7 @@
                             !str_contains(request()->url(), 'like'))) {{ 'active' }} @endif">
                     <a href="/dashboard/confessions" class="sidebar-link">
                         <i class="bi bi-chat-heart-fill"></i>
-                        <span>Pengakuan</span>
+                        <span>Pengaduan</span>
                     </a>
                 </li>
 
@@ -116,7 +116,7 @@
                         class="sidebar-item {{ Request::is('dashboard/confessions/confession-categories*') ? 'active' : '' }}">
                         <a href="/dashboard/confessions/confession-categories" class="sidebar-link">
                             <i class="bi bi-card-list"></i>
-                            <span>Kategori Pengakuan</span>
+                            <span>Kategori Pengaduan</span>
                         </a>
                     </li>
 
