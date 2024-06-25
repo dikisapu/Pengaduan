@@ -19,7 +19,7 @@ initDashboard().then((res) => {
         const optionsStatistics = {
             series: [
                 {
-                    name: "Pengakuan",
+                    name: "pengaduan",
                     data: allConfessions.data.yAxis,
                 },
                 {

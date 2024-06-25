@@ -1,3 +1,3 @@
 import { quillTextEditor } from "../../quill";
 
-quillTextEditor("#editor", "body", "pengakuan");
+quillTextEditor("#editor", "body", "pengaduan");

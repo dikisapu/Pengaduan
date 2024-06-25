@@ -29,7 +29,7 @@ class ConfessionCategoryService extends Service
   public function allIndex($confessionCategories)
   {
     $viewVariables = [
-      "title" => "Kategori Pengakuan",
+      "title" => "Kategori pengaduan",
       "confessionCategories" => $confessionCategories,
     ];
     return view("pages.landing-page.confession-categories.index", $viewVariables);

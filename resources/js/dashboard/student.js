@@ -16,7 +16,7 @@ initDashboard().then((res) => {
         const optionsYourStatistics = {
             series: [
                 {
-                    name: "Pengakuan",
+                    name: "pengaduan",
                     data: yourConfessions.yAxis,
                 },
                 {

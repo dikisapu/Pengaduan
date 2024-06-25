@@ -35,21 +35,21 @@ class ConfessionService extends Service
   ];
 
   private array $messages = [
-    "title.required" => "Judul pengakuan harus diisi.",
-    "title.max" => "Judul pengakuan maksimal :max karakter.",
-    "slug.required" => "Slug pengakuan harus diisi.",
-    "slug.unique" => "Slug pengakuan sudah ada.",
-    "date.required" => "Tanggal pengakuan harus diisi.",
-    "date.date" => "Tanggal pengakuan harus berupa :date.",
-    "date.date_format" => "Tanggal pengakuan harus berformat :date_format.",
-    "id_confession_category.required" => "Kategori pengakuan harus diisi.",
-    "place.required" => "Tempat pengakuan harus diisi.",
-    "privacy.required" => "Privasi pengakuan harus diisi.",
-    "privacy.in" => "Privasi pengakuan tidak valid.",
-    "image.image" => "Gambar pengakuan harus berupa :image.",
-    "image.file" => "Gambar pengakuan harus berupa :file.",
-    "image.max" => "Gambar pengakuan maksimal :max KiB.",
-    "body.required" => "Isi pengakuan harus diisi.",
+    "title.required" => "Judul pengaduan harus diisi.",
+    "title.max" => "Judul pengaduan maksimal :max karakter.",
+    "slug.required" => "Slug pengaduan harus diisi.",
+    "slug.unique" => "Slug pengaduan sudah ada.",
+    "date.required" => "Tanggal pengaduan harus diisi.",
+    "date.date" => "Tanggal pengaduan harus berupa :date.",
+    "date.date_format" => "Tanggal pengaduan harus berformat :date_format.",
+    "id_confession_category.required" => "Kategori pengaduan harus diisi.",
+    "place.required" => "Tempat pengaduan harus diisi.",
+    "privacy.required" => "Privasi pengaduan harus diisi.",
+    "privacy.in" => "Privasi pengaduan tidak valid.",
+    "image.image" => "Gambar pengaduan harus berupa :image.",
+    "image.file" => "Gambar pengaduan harus berupa :file.",
+    "image.max" => "Gambar pengaduan maksimal :max KiB.",
+    "body.required" => "Isi pengaduan harus diisi.",
   ];
 
 
@@ -204,7 +204,7 @@ class ConfessionService extends Service
       );
 
     $viewVariables = [
-      "title" => "Pengakuan",
+      "title" => "pengaduan",
       "allConfessions" => $allConfessions,
       "unprocessedConfessions" => $unprocessedConfessions,
     ];
@@ -239,7 +239,7 @@ class ConfessionService extends Service
     );
 
     $viewVariables = [
-      "title" => "Pengakuan",
+      "title" => "pengaduan",
       "allConfessions" => $allConfessions,
       "confessionsHandledByYou" => $confessionsHandledByYou,
       "unprocessedConfessions" => $unprocessedConfessions,
@@ -262,7 +262,7 @@ class ConfessionService extends Service
   public function officerPick(User $user, RecConfession $confession)
   {
     try {
-      $this->isNotAssignedToYou($user, $confession, "Pengakuan ini sudah kamu atau orang lain pick.");
+      $this->isNotAssignedToYou($user, $confession, "pengaduan ini sudah kamu atau orang lain pick.");
 
       // ---------------------------------
       // Rules
@@ -281,7 +281,7 @@ class ConfessionService extends Service
       return $this->responseJsonMessage("An error occurred: " . $e->getMessage(), 500);
     }
 
-    return $this->responseJsonMessage("Pengakuan telah di-pick!");
+    return $this->responseJsonMessage("pengaduan telah di-pick!");
   }
 
   public function officerRelease(User $user, RecConfession $confession)
@@ -306,13 +306,13 @@ class ConfessionService extends Service
       return $this->responseJsonMessage("An error occurred: " . $e->getMessage(), 500);
     }
 
-    return $this->responseJsonMessage("Pengakuan telah di-release!");
+    return $this->responseJsonMessage("pengaduan telah di-release!");
   }
 
   public function officerClose(User $user, RecConfession $confession)
   {
     try {
-      $this->isAssignedToYou($user, $confession, "Pengakuan ini sudah kamu close.");
+      $this->isAssignedToYou($user, $confession, "pengaduan ini sudah kamu close.");
 
       // ---------------------------------
       // Rules
@@ -331,7 +331,7 @@ class ConfessionService extends Service
       return $this->responseJsonMessage("An error occurred: " . $e->getMessage(), 500);
     }
 
-    return $this->responseJsonMessage("Pengakuan telah di-close");
+    return $this->responseJsonMessage("pengaduan telah di-close");
   }
 
 
@@ -344,7 +344,7 @@ class ConfessionService extends Service
       ->get();
 
     $viewVariables = [
-      "title" => "Pengakuan",
+      "title" => "pengaduan",
       "confessions" => $confessions,
     ];
     return view("pages.dashboard.actors.student.confessions.index", $viewVariables);
@@ -355,7 +355,7 @@ class ConfessionService extends Service
     $confessionCategories = MasterConfessionCategory::active()->get()->sortBy("category_name");
 
     $viewVariables = [
-      "title" => "Buat Pengakuan",
+      "title" => "Buat pengaduan",
       "confessionCategories" => $confessionCategories,
     ];
     return view("pages.dashboard.actors.student.confessions.create", $viewVariables);
@@ -378,7 +378,7 @@ class ConfessionService extends Service
       return redirect(self::DASHBOARD_URL)->withErrors($e->getMessage());
     }
 
-    return redirect($this->createResponseURL($confession->slug))->withSuccess('Pengakuan kamu berhasil dibuat!');
+    return redirect($this->createResponseURL($confession->slug))->withSuccess('pengaduan kamu berhasil dibuat!');
   }
 
   public function studentEdit(User $user, RecConfession $confession)
@@ -395,7 +395,7 @@ class ConfessionService extends Service
       $confessionCategories = MasterConfessionCategory::active()->get()->sortBy("category_name");
 
       $viewVariables = [
-        "title" => "Sunting Pengakuan",
+        "title" => "Sunting pengaduan",
         "confession" => $confession,
         "confessionCategories" => $confessionCategories,
       ];
@@ -424,7 +424,7 @@ class ConfessionService extends Service
       $credentials["id_user"] = $user->id_user;
       $credentials["excerpt"] = Str::limit(strip_tags($data["body"]), 50, ' ...');
 
-      return $this->modify($confession, $credentials, $user->id_user, "pengakuan", $this->createResponseURL($data["slug"]));
+      return $this->modify($confession, $credentials, $user->id_user, "pengaduan", $this->createResponseURL($data["slug"]));
     }
 
     return redirect(self::HOME_URL)
@@ -452,7 +452,7 @@ class ConfessionService extends Service
       return $this->responseJsonMessage("An error occurred: " . $e->getMessage(), 500);
     }
 
-    return $this->responseJsonMessage("Pengakuan kamu telah di-unsend!");
+    return $this->responseJsonMessage("pengaduan kamu telah di-unsend!");
   }
 
   public function studentExport(string $table, string $fileName, $writterType, User $user)
@@ -480,7 +480,7 @@ class ConfessionService extends Service
       return $this->responseJsonMessage("An error occurred: " . $e->getMessage(), 500);
     }
 
-    return $this->responseJsonMessage("Foto pengakuan kamu telah di-unsend!");
+    return $this->responseJsonMessage("Foto pengaduan kamu telah di-unsend!");
   }
 
   public function studentCheckSlug($data)

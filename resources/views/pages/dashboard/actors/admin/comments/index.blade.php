@@ -61,23 +61,23 @@
                                     </button>
                                 </form>
 
-                                <form action="/dashboard/confessions/comments/export" method="POST">
+                                {{-- <form action="/dashboard/confessions/comments/export" method="POST">
                                     @csrf
                                     <input type="hidden" name="table" value="all-of-comments">
                                     <input type="hidden" name="type" value="CSV">
                                     <button type="submit" class="dropdown-item">
                                         <span class="fa-fw select-all fas text-light"></span> CSV
                                     </button>
-                                </form>
+                                </form> --}}
 
-                                <form action="/dashboard/confessions/comments/export" method="POST">
+                                {{-- <form action="/dashboard/confessions/comments/export" method="POST">
                                     @csrf
                                     <input type="hidden" name="table" value="all-of-comments">
                                     <input type="hidden" name="type" value="HTML">
                                     <button type="submit" class="dropdown-item">
                                         <span class="fa-fw select-all fab text-light"></span> HTML
                                     </button>
-                                </form>
+                                </form> --}}
 
                                 <form action="/dashboard/confessions/comments/export" method="POST">
                                     @csrf

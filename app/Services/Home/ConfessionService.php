@@ -39,7 +39,7 @@ class ConfessionService extends Service
   public function allIndex(string $title, $confessions)
   {
     $viewVariables = [
-      "title" => "Pengakuan $title",
+      "title" => "pengaduan $title",
       "confessions" => $confessions,
     ];
     return view("pages.landing-page.confessions.index", $viewVariables);
