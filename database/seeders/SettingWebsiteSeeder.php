@@ -22,9 +22,9 @@ class SettingWebsiteSeeder extends Seeder
             ['key' => 'IMAGE_WEB_FAVICON', 'value' => 'logo.png', "flag_active" => "Y"],
             ['key' => 'TEXT_HERO_HEADER', 'value' => 'Sistem Pengaduan Online SMK YADIKA NATAR', "flag_active" => "Y"],
             ['key' => 'TEXT_HERO_DESCRIPTION', 'value' => 'Sampaikan Pengaduan, laporan, kritik, atau saran kamu di sini~', "flag_active" => "Y"],
-            ['key' => 'IMAGE_FOOTER', 'value' => 'logo-smkn-4.png', "flag_active" => "Y"],
+            ['key' => 'IMAGE_FOOTER', 'value' => 'natar.png', "flag_active" => "Y"],
             ['key' => 'TEXT_FOOTER', 'value' => 'SMK Yadika Natar', "flag_active" => "Y"],
-            ['key' => 'IMAGE_FOOTER_DASHBOARD', 'value' => 'logo-smkn-4.png', "flag_active" => "Y"],
+            ['key' => 'IMAGE_FOOTER_DASHBOARD', 'value' => 'natar.png', "flag_active" => "Y"],
             ['key' => 'LINK_SOCMED_INSTAGRAM', 'value' => 'https://instagram.com/smkn4kotatangerang', "flag_active" => "Y"],
         ]);
     }
